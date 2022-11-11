@@ -4,8 +4,9 @@
 	color-scheme: light dark;
   }
   
- 
+ html{ font-size:18px;}
 body{
+	font-size: 1rem;
 	background-color: $lighter-color;
 	font-family: 'Open Sans', sans-serif;
 	color:$darker-color;

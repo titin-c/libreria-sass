@@ -1,5 +1,5 @@
 .container {
-    padding: $general-padding4;
+    padding: $general-padding2;
     max-width: $max-screen;
     margin: auto;
 }
@@ -533,4 +533,10 @@ div[class*="span-"] div[class*="span-"] {
             }
         }
     }
+}
+
+@media (min-width:$small-screen) {
+.container {
+    padding: $general-padding4;
+}
 }
