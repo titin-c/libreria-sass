@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UT8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- The main stylesheet -->
+	<link rel="stylesheet" href="source/css/css.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<header>
+		<nav class="nav">
+			<div class="container">
+				<ul class="list-inline">
+					<li class="list-inline-item"><a href="#">Home</a></li>
+					<li class="list-inline-item"><a href="#colors">Colors</a></li>
+					<li class="list-inline-item"><a href="#titles">Títulos</a></li>
+					<li class="list-inline-item"><a href="#fonts">Fonts</a></li>
+					<li class="list-inline-item"><a href="#images">Images</a></li>
+					<li class="list-inline-item"><a href="#columns">Columns</a></li>
+					<li class="list-inline-item"><a href="#buttons">Butons</a></li>
+					<li class="list-inline-item"><a href="#forms">Forms</a></li>
+				</ul>
+
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<h1 class="display-5">Biblioteca propia hecha por Titín</h1>
+	</div>
+
+	<section id="colors">
+		<div class="container">
+			<h2 class="display-6">Colors</h2>
+			<div class="row">
+				<div class="col-1 med-col-1 big-col-3">
+					<div class="card card-aclaracion">
+						<h5>Principales</h5>
+						<p>Color primary y secundar y color de texto y fondo para <code>Prefers-color-scheme</code> Dark
+							o Light.</p>
+						<div class="color bg-background"></div>
+						<div class="color bg-color"></div>
+						<div class="color bg-primary"></div>
+						<div class="color bg-secondary"></div>
+					</div>
+				</div>
+				<div class="col-1 med-col-1 big-col-3">
+					<div class="card card-aclaracion">
+						<h5>Escala de grises</h5>
+						<p>Tan solo 4 grados de gris son suficientes para jugar con las distintas secciones.</p>
+						<div class="color bg-grey1"></div>
+						<div class="color bg-grey2"></div>
+						<div class="color bg-grey3"></div>
+						<div class="color bg-grey4"></div>
+					</div>
+
+
+				</div>
+				<div class="col-1 med-col-1 big-col-3">
+					<div class="card card-aclaracion">
+						<h5>Colores de apoyo</h5>
+						<p>Colores de apoyo necesarios para feedback succsess o alert de las apps.</p>
+						<div class="color bg-success"></div>
+						<div class="color bg-danger"></div>
+						<div class="color bg-alert"></div>
+						<div class="color bg-info"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="titles">
+		<div class="container">
+			<h2 class="display-6">Titulos y display</h2>
+			<div class="row">
+				<div class="col-1 med-col-1 big-col-2">
+					<div class="example">
+						<p class="display-1">Display 1</p>
+						<p class="display-2">Display 2</p>
+						<p class="display-3">Display 3</p>
+						<p class="display-4">Display 4</p>
+						<p class="display-5">Display 5</p>
+						<p class="display-6">Display 6</p>
+					</div>
+				</div>
+				<div class="col-1 med-col-1 big-col-2">
+					<div class="example">
+						<p class="h1">Heading 1</p>
+						<p class="h2">Heading 2</p>
+						<p class="h3">Heading 3</p>
+						<p class="h4">Heading 4</p>
+						<p class="h5">Heading 5</p>
+						<p class="h6">Heading 6</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="fonts">
+		<div class="container">
+			<div class="example">
+				<p class="lead">
+					This is a lead paragraph. It stands out from regular paragraphs.
+				</p>
+			</div>
+
+			<div class="example">
+				<p>You can use the mark tag to <mark>highlight</mark> text.</p>
+				<p><del>This line of text is meant to be treated as deleted text.</del></p>
+				<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+				<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+				<p><u>This line of text will render as underlined.</u></p>
+				<p><small>This line of text is meant to be treated as fine print.</small></p>
+				<p><strong>This line rendered as bold text.</strong></p>
+				<p><em>This line rendered as italicized text.</em></p>
+			</div>
+
+			<div class="example">
+				<blockquote class="blockquote">
+					<p>A well-known quote, contained in a blockquote element.</p>
+					<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
+					</footer>
+				</blockquote>
+			</div>
+
+			<div class="example">
+				<ul class="list-unstyled">
+					<li>This is a list.</li>
+					<li>It appears completely unstyled.</li>
+					<li>Structurally, it's still a list.</li>
+					<li>However, this style only applies to immediate child elements.</li>
+					<li>Nested lists:
+						<ul>
+							<li>are unaffected by this style</li>
+							<li>will still show a bullet</li>
+							<li>and have appropriate left margin</li>
+						</ul>
+					</li>
+					<li>This may still come in handy in some situations.</li>
+				</ul>
+			</div>
+
+			<div class="example">
+				<ul class="list-inline">
+					<li class="list-inline-item">This is a list item.</li>
+					<li class="list-inline-item">And another one.</li>
+					<li class="list-inline-item">But they're displayed inline.</li>
+				</ul>
+			</div>
+	</section>
+	</div>
+
+	<section id="images">
+		<div class="container">
+			<div class="example">
+				<svg class="img-fluid" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+					aria-label="Marcador de posición: imagen receptiva" preserveAspectRatio="xMidYMid slice"
+					focusable="false">
+					<title>Placeholder</title>
+					<rect width="100%" height="100%"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Responsive
+						image</text>
+				</svg>
+
+			</div>
+
+			<div class="example">
+				<svg class="img-thumbnail" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img"
+					aria-label="Una imagen de marcador de posición cuadrada genérica con un borde blanco alrededor, lo que la hace parecerse a una fotografía tomada con una cámara instantánea antigua: 200x200"
+					preserveAspectRatio="xMidYMid slice" focusable="false">
+					<title>A generic square placeholder image with a white border around it, making it resemble a
+						photograph taken with an old instant camera</title>
+					<rect width="100%" height="100%"></rect><text x="50%" y="50%" fill="#dee2e6"
+						dy=".3em">200x200</text>
+				</svg>
+				<svg class="img-thumbnail round" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img"
+					aria-label="Una imagen de marcador de posición cuadrada genérica con un borde blanco alrededor, lo que la hace parecerse a una fotografía tomada con una cámara instantánea antigua: 200x200"
+					preserveAspectRatio="xMidYMid slice" focusable="false">
+					<title>A generic square placeholder image with a white border around it, making it resemble a
+						photograph taken with an old instant camera</title>
+					<rect width="100%" height="100%"></rect><text x="50%" y="50%" dy=".3em">200x200</text>
+				</svg>
+			</div>
+			<div class="example">
+				<figure class="figure">
+					<svg class="bd-placeholder-img figure-img img-fluid rounded" width="400" height="300"
+						xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: 400x300"
+						preserveAspectRatio="xMidYMid slice" focusable="false">
+						<title>Placeholder</title>
+						<rect width="100%" height="100%"></rect><text x="50%" y="50%" fill="#dee2e6"
+							dy=".3em">400x300</text>
+					</svg>
+					<figcaption class="figure-caption">
+						<font style="vertical-align: inherit;">
+							<font style="vertical-align: inherit;">Un título para la imagen de arriba.</font>
+						</font>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+	</section>
+	<section id="columns">
+		<div class="container">
+			<div class="row">
+				<div class="col-1 med-col-1 big-col-1">
+					<div class="card card-aclaracion">
+						<h3>Columnas responsive</h3>
+						<p>Hay 2 diferencia esenciales con Bootstrap: La primera es que es tecnología mobile first, el
+							diseño se realiza pensando principalmente en móvil y la segunda es que con
+							<code>.col-n</code>
+							marcas directamente el número de columnas que deseas desde 1 hasta 12... por lo que puedes
+							crear
+							por fin, filas con 5 columnas!! <code>.big-col-5</code>
+						</p>
+						<pre><code>
+&lt;main class="row"&gt;
+ &lt;div class="col-2 med-col-3 big-col-5"&gt;
+  &lt;div class="card"&gt;Esto es una card&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/main&gt;
+			</code></pre>
+						<p>Si deseas crear columnas con un tamaño mayor al 50% (<code>.col-2</code>) deberás sustituir
+							<code>.col-n</code> por <code>.span-n</code>, donde 'n' es el tanto por cien del tamaño de
+							su
+							contenedor puedes ver un ejemplo en funcionamiento <a href="#span-n">aquí</a>, donde se
+							convinan
+							<code>.col-n</code> y <code>.span-n</code> segun el tamaño de pantalla.
+						</p>
+					</div>
+				</div>
+			</div>
+			<main class="row">
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+				<div class="col-2 med-col-3 big-col-5">
+					<div class="card">Esto es una card </div>
+				</div>
+			</main>
+		</div>
+
+		<div class="container">
+			<div class="call-to">
+				<h1 class="display-2">Lorem ipsum dolor sit amet.</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit itaque, placeat quis beatae, eligendi
+					fuga
+					expedita modi ducimus magni quasi eos dolorem numquam quae porro cupiditate doloribus blanditiis
+					impedit
+					distinctio.</p>
+				<button class="btn btn-primary">Boton Primario</button>
+				<button class="btn">Boton Secundario</button>
+			</div>
+
+		</div>
+	</section>
+	<section id="span-n">
+		<div class="container">
+			<div class="row">
+				<div class="col-1 med-col-1 big-col-1">
+					<div>
+						<h3>Columnas responsive 2</h3>
+						<p>Si deseas crear columnas con un tamaño mayor al 50% <code>.col-2</code>, deberás sustituir
+							<code>.col-n</code> por <code>.span-n</code>, donde 'n' es el tanto por cien del tamaño de
+							su contenedor.
+						</p>
+
+						<p>En el siguiente ejemplo podemos ver una fila con 2 columnas, que ocupan el 100%
+							en móvil <code>.col-1</code> (1 columna), el 50% en pantallas medianas
+							<code>.med-col-2</code> (2 columnas en pantallas medianas) y en pantallas grandes, la
+							primera ocupa el 70% <code>.big-span-70</code> y la segunda el 30% <code>.big-span-30</code>
+						</p><br>
+						<pre><code>
+&lt;main class="row"&gt;
+ &lt;div class="col-1 med-col-2 <mark>big-span-70</mark>"&gt;
+  ...contenido
+ &lt;/div&gt;
+ &lt;div class="col-1 med-col-2 <mark>big-span-30</mark>"&gt;
+  ...contenido
+ &lt;/div&gt;
+&lt;/main&gt;
+				</code></pre>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-1 med-col-2 big-span-70">
+					<div class="card">
+						<h1>Lorem ipsum dolor sit amet.</h1>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veniam officiis, labore cumque
+							explicabo soluta repellendus eos velit earum. Dicta itaque quas, officiis porro quae
+							repudiandae
+							aperiam aliquid animi maxime!</p>
+					</div>
+					<div class="card">
+						<h1>Lorem ipsum dolor sit amet.</h1>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veniam officiis, labore cumque
+							explicabo soluta repellendus eos velit earum. Dicta itaque quas, officiis porro quae
+							repudiandae
+							aperiam aliquid animi maxime!</p>
+					</div>
+				</div>
+				<div class="col-1 med-col-2 big-span-30">
+					<div class="card">
+						<h3>Registrate</h3>
+						<form action="">
+							<div class="row">
+								<div class="col-1 med-col-1 big-col-1">
+									<label class="form-label">Email</label>
+									<input class="form-control block" type="email" placeholder="Correo Electronico">
+								</div>
+								<div class="col-1 med-col-1 big-col-1">
+									<label class="form-label">Contraseña</label>
+									<input class=" form-control block" type="password" placeholder="Contraseña">
+									<div class="form-feedback">Contraseña: May. + Min. + Núm. + Sig.<strong></strong>
+									</div>
+								</div>
+								<div class="col-1 med-col-2 big-col-2"><button class=" btn btn-primary block">
+										Suscribete</button></div>
+								<div class="col-1 med-col-2 big-col-2"><button class=" btn block">Suscribete</button>
+								</div>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="buttons">
+		<div class="container">
+			<div class="row">
+				<div class="col-1 med-col-2 big-col-4">
+					<button class="btn btn-big">Botón big</button>
+					<button class="btn btn-big btn-rounded">Botón big</button>
+					<button class="btn">Botón default</button>
+					<button class="btn btn-rounded">Botón default</button>
+					<button class="btn btn-small">Botón small</button>
+					<button class="btn btn-small btn-rounded">Botón small</button>
+					<button class="btn btn-disabled">Botón disabled</button>
+					<button class="btn btn-rounded btn-disabled">Botón disabled</button>
+				</div>
+				<div class="col-1 med-col-2 big-col-4">
+					<button class="btn btn-big btn-primary">Botón big</button>
+					<button class="btn btn-big btn-rounded btn-primary">Botón big</button>
+					<button class="btn btn-primary">Botón default</button>
+					<button class="btn btn-rounded btn-primary">Botón default</button>
+					<button class="btn btn-small btn-primary">Botón small</button>
+					<button class="btn btn-small btn-rounded btn-primary">Botón small</button>
+					<button class="btn btn-disabled btn-primary">Botón disabled</button>
+					<button class="btn btn-rounded btn-disabled btn-primary">Botón disabled</button>
+				</div>
+				<div class="col-1 med-col-2 big-col-4">
+					<button class="btn btn-big btn-danger">Botón big</button>
+					<button class="btn btn-big btn-rounded btn-danger">Botón big</button>
+					<button class="btn btn-danger">Botón default</button>
+					<button class="btn btn-rounded btn-danger">Botón default</button>
+					<button class="btn btn-small btn-danger">Botón small</button>
+					<button class="btn btn-small btn-rounded btn-danger">Botón small</button>
+					<button class="btn btn-disabled btn-danger">Botón disabled</button>
+					<button class="btn btn-rounded btn-disabled btn-danger">Botón disabled</button>
+				</div>
+				<div class="col-1 med-col-2 big-col-4">
+					<button class="btn btn-big btn-success">Botón big</button>
+					<button class="btn btn-big btn-rounded btn-success">Botón big</button>
+					<button class="btn btn-success">Botón default</button>
+					<button class="btn btn-rounded btn-success">Botón default</button>
+					<button class="btn btn-small btn-success">Botón small</button>
+					<button class="btn btn-small btn-rounded btn-success">Botón small</button>
+					<button class="btn btn-disabled btn-success">Botón disabled</button>
+					<button class="btn btn-rounded btn-disabled btn-success">Botón disabled</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="forms">
+		<div class="container">
+			<div class="col-1 med-span-80 big-span-60">
+				<div class="row">
+
+					<div class="col-1 med-col-2 big-col-2">
+						<label class="form-label" for="form-control-1">
+							Email
+						</label>
+						<input class="form-control block" type="email" placeholder="Correo Electronico..." required
+							id="form-control-1">
+						<div class="form-feedback">Nunca compartiremos tu email.</div>
+					</div>
+					<div class="col-1 med-col-2 big-col-2">
+						<label class="form-label" for="form-control-2">
+							Teléfono
+						</label>
+						<input class="form-control block" type="phone" placeholder="Teléfono de contacto..." required
+							id="form-control-2">
+						<div class="form-feedback">(+XX) XXX XXX XXX)</div>
+					</div>
+
+
+
+					<div class="col-1 med-col-2 big-col-2">
+						<select class="form-control block" name="" id="">
+							<option disabled selected>Selecciona una opción...</option>
+							<option value="item 1">Item 1</option>
+							<option value="item 2">Item 2</option>
+							<option value="item 3">Item 3</option>
+						</select>
+					</div>
+					<div class="col-1 med-col-2 big-col-2">
+						<input class="form-control block" type="search" placeholder="Buscar...">
+					</div>
+					<div class="col-1 med-col-1 big-col-1">
+						<label class="form-label" for="form-control-5">
+							Escribe un mensaje
+						</label>
+						<textarea name="" id="form-control-1" cols="30" rows="10" class="form-control block"></textarea>
+					</div>
+
+
+					<hr class="no-visible">
+
+
+					<div class="col-1 med-col-2 big-col-2">
+						<input type="checkbox" class="form-switch" id="exampleCheck1">
+						<label class="form-label" for="exampleCheck1">
+							Me echa un vistazo
+						</label>
+					</div>
+					<div class="col-1 med-col-2 big-col-2">
+						<input type="checkbox" class="form-switch rounded" id="exampleCheck2">
+						<label class="form-label" for="exampleCheck2">
+							Me echa un vistazo
+						</label>
+					</div>
+
+
+					<hr class="no-visible">
+
+
+					<fieldset class="block">
+						<legend>
+							Botones tipo checkbox
+						</legend>
+						<div class="row">
+							<div class="col-1 med-col-3 big-col-3">
+								<div>
+									<input type="checkbox" name="checkbox" class="form-check-input"
+										id="examplecheckbox1">
+									<label class="form-label" for="examplecheckbox1">
+										otra radio
+									</label>
+								</div>
+								<div>
+									<input type="checkbox" name="checkbox" class="form-check-input"
+										id="examplecheckbox2">
+									<label class="form-label" for="examplecheckbox2">
+										otra radio
+									</label>
+								</div>
+							</div>
+							<div class="col-1 med-col-3 big-col-3">
+								<div>
+									<input type="checkbox" name="checkbox" class="form-check-input rounded"
+										id="examplecheckbox3">
+									<label class="form-label" for="examplecheckbox3">
+										Otra radio más
+									</label>
+								</div>
+								<div>
+									<input type="checkbox" name="checkbox" class="form-checkbox-input rounded check"
+										id="examplecheckbox4">
+									<label class="form-label" for="examplecheckbox4">
+										Último radio
+									</label>
+								</div>
+							</div>
+							<div class="col-1 med-col-3 big-col-3">
+								<div>
+									<input type="checkbox" name="checkbox" class="form-check-input success"
+										id="examplecheckbox5">
+									<label class="form-label" for="examplecheckbox5">
+										Success radio
+									</label>
+								</div>
+								<div>
+									<input type="checkbox" name="checkbox" class="form-check-input danger rounded"
+										id="examplecheckbox6">
+									<label class="form-label" for="examplecheckbox6">
+										Danger radio <b>Ojo!</b>
+									</label>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+
+
+					<hr class="no-visible">
+
+
+					<fieldset class="block">
+						<legend>
+							Botones tipo radio
+						</legend>
+						<div class="row">
+							<div class="col-1 med-col-3 big-col-3">
+								<div>
+									<input type="radio" name="radios" class="form-check-input" id="exampleRadio1">
+									<label class="form-label" for="exampleRadio1">
+										otra radio
+									</label>
+								</div>
+								<div>
+									<input type="radio" name="radios" class="form-check-input" id="exampleRadio2">
+									<label class="form-label" for="exampleRadio2">
+										otra radio
+									</label>
+								</div>
+							</div>
+							<div class="col-1 med-col-3 big-col-3">
+								<div>
+									<input type="radio" name="radios" class="form-check-input rounded"
+										id="exampleRadio3">
+									<label class="form-label" for="exampleRadio3">
+										Otra radio más
+									</label>
+								</div>
+								<div>
+									<input type="radio" name="radios" class="form-check-input rounded"
+										id="exampleRadio4">
+									<label class="form-label" for="exampleRadio4">
+										Último radio
+									</label>
+								</div>
+							</div>
+							<div class="col-1 med-col-3 big-col-3">
+								<div>
+									<input type="radio" name="radios" class="form-check-input success"
+										id="exampleRadio5">
+									<label class="form-label" for="exampleRadio5">
+										Success radio
+									</label>
+								</div>
+								<div>
+									<input type="radio" name="radios" class="form-check-input danger rounded"
+										id="exampleRadio6">
+									<label class="form-label" for="exampleRadio6">
+										<b>OJO!</b> Danger radio
+									</label>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+
+
+					<hr class="no-visible">
+
+
+					<div class="col-1 med-col-1 big-col-1">
+						<label class="form-label" for="customFile">Subir CV</label>
+						<input type="file" class="form-control" id="inputTypeFile" size="50" onchange="uploadFiles()">
+					</div>
+
+
+					<hr class="no-visible">
+
+
+					<div class="col-1 med-col-1 big-col-1">
+						<div class="row">
+
+							<div class="span-20 med-span-20 big-span-20">
+								<input type="number" class="form-control " id="rangenumber" min="0" max="100" value="0"
+									oninput="range.value=value">
+							</div>
+							<div class="span-80 med-span-80 big-span-80">
+								<label for="customRange3" class="form-label">
+									Rango de ejemplo
+								</label>
+								<input type="range" class="block" value="00" min="0" max="100" id="range"
+									oninput="rangenumber.value=value" />
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary">Enviar</button>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+</body>
+<script async type="text/javascript" src="./js/forms/inputRange.js"></script>
+<script async type="text/javascript" src="./js/forms/inputFile.js"></script>
+
+</html>

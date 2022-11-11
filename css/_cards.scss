@@ -1,0 +1,13 @@
+.card{
+    background-color: $grey1;
+    padding: $general-padding3;
+    border-radius: $general-radius1;
+
+    @include darkMode {
+		background-color: $grey4;
+	  }
+
+    & + .card{
+        margin-top:1rem
+    }
+}

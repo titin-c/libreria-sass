@@ -1,0 +1,40 @@
+// light colors
+
+$lighter-color: #f00;
+$darker-color: #333;
+
+$primary: #1890ff;
+$secondary: #ff7c18;
+
+$grey1: #eee;
+$grey2: #d9d9d9;
+$grey3: #818181;
+$grey4: #333;
+
+$danger: #ff4d4f;
+$success: #4dd13a;
+
+$bg-transparent: #ffffff;
+
+$box-shadow: darken($lighter-color, 50%);
+
+
+// Dark colors
+
+$dark-background: #0f0;
+$dark-color: #F4F5F9;
+
+$dark-primary: #1890ff;
+$dark-secondary: #ff7c18;
+
+$dark-grey1: #eee;
+$dark-grey2: #d9d9d9;
+$dark-grey3: #818181;
+$dark-grey4: #333;
+
+$dark-danger: #ff4d4f;
+$dark-success: #4dd13a;
+
+$dark-bg-transparent: #ffffff;
+
+$dark-box-shadow: darken($lighter-color, 50%);

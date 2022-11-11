@@ -1,0 +1,69 @@
+//importar todos los archivos de configuración
+@import './configure/';
+
+// css gloval de la página
+@import './gloval';
+
+// css de estructura de la página
+@import './containers';
+
+// css de los text, fonts, etc
+@import './fonts';
+
+// css de los componentes
+@import './buttons';
+@import './forms/form-control.scss';
+
+// css de las cards
+@import './cards';
+
+
+
+
+
+
+// css para mostrar bien esta web
+
+body{padding-top: 150px;}
+header {
+    /* height: 100px; */
+    display: flex;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba($grey4, .9);
+
+    & a{
+        color: $darker-color;
+        text-decoration: none;
+    }
+}
+section{
+	padding: 5rem 0 0;
+}
+.example{padding: 3rem 0;}
+.color{
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	display: inline-block;
+	margin-right: 10px;
+
+}
+
+.card.card-aclaracion{
+	background-color: rgba($secondary, 20%);
+
+	@include darkMode {
+		background-color: rgba($secondary, 5%);
+	  }
+}
+.call-to{
+    background: url('../../source/img/bg.webp') center center;
+    background-size: cover;
+    padding: $general-padding4;
+    color: $lighter-color;
+    border-radius: $general-radius2;
+}
