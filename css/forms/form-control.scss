@@ -300,7 +300,7 @@ input[type="radio"] {
         padding-left: $general-padding1;
         text-transform: unset;
         display: inline-block;
-        font-size: .9rem;
+        font-size: 1rem;
     }
 }
 
@@ -358,6 +358,7 @@ input[type="file" i].form-control {
         }
 
         & .form-upload-text {
+            font-size: 1rem;
             display: flex;
             align-items: center;
             padding-left: 1rem;
