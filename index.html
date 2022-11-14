@@ -8,7 +8,8 @@
 
 	<!-- The main stylesheet -->
 	<link rel="stylesheet" href="source/css/css.css">
-	<title>Document</title>
+	<title>Framework - Librería de estilos realizada con Sass</title>
+	<link rel="icon" type="image/x-icon" href="./source/icons/favicon.ico">
 </head>
 
 <body>
@@ -106,36 +107,36 @@
 		<div class="container">
 			<div class="example">
 				<p class="lead">
-					This is a lead paragraph. It stands out from regular paragraphs.
+					Este es un párrafo principal. Se destaca de los párrafos regulares.
 				</p>
 			</div>
 
 			<div class="example">
-				<p>You can use the mark tag to <mark>highlight</mark> text.</p>
-				<p><del>This line of text is meant to be treated as deleted text.</del></p>
-				<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-				<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-				<p><u>This line of text will render as underlined.</u></p>
-				<p><small>This line of text is meant to be treated as fine print.</small></p>
-				<p><strong>This line rendered as bold text.</strong></p>
-				<p><em>This line rendered as italicized text.</em></p>
-			</div>
+				<p>Puede utilizar la etiqueta de marca para<mark>destacar</mark>texto.</p>
+				<p><del>Esta línea de texto debe tratarse como texto eliminado.</del></p>
+				<p><s>Ésta línea de texto se debe de considerar no correcta.</s></p>
+				<p><ins>Esta línea de texto debe tratarse como una adición al documento.</ins></p>
+				<p><u>Esta línea de texto aparecerá como subrayada.</u></p>
+				<p><small>Esta línea de texto debe tratarse como letra pequeña.</small></p>
+				<p><strong>Esta línea se muestra como texto en negrita.</strong></p>
+				<p><em>Esta línea se muestra como texto en cursiva.</em></p>
+				</div>
 
 			<div class="example">
 				<blockquote class="blockquote">
-					<p>A well-known quote, contained in a blockquote element.</p>
-					<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
+					<p>Una cita conocida, contenida en un elemento blockquote.</p>
+					<footer class="blockquote-footer">Alguien famoso en <cite title="Source Title">Source Title</cite>
 					</footer>
 				</blockquote>
 			</div>
 
 			<div class="example">
-				<ul class="list-unstyled">
-					<li>This is a list.</li>
-					<li>It appears completely unstyled.</li>
-					<li>Structurally, it's still a list.</li>
-					<li>However, this style only applies to immediate child elements.</li>
-					<li>Nested lists:
+				<ul class="list">
+					<li>Esto es una lista.</li>
+					<li>Tiene un estilo propio.</li>
+					<li>Estructuralmente tiene forma de .</li>
+					<li>Los estilos cambian en las listas secundarias.</li>
+					<li>Listado siguiente:
 						<ul>
 							<li>are unaffected by this style</li>
 							<li>will still show a bullet</li>
@@ -148,9 +149,9 @@
 
 			<div class="example">
 				<ul class="list-inline">
-					<li class="list-inline-item">This is a list item.</li>
-					<li class="list-inline-item">And another one.</li>
-					<li class="list-inline-item">But they're displayed inline.</li>
+					<li class="list-inline-item">Esto es un list item.</li>
+					<li class="list-inline-item">Y este también.</li>
+					<li class="list-inline-item">Pero se muestran alineados horizontalmente.</li>
 				</ul>
 			</div>
 	</section>
@@ -642,16 +643,67 @@
 
 					<hr class="no-visible">
 
-
+					<div class="row">
+						<div class="col-1 med-col-1 big-col-1">
+							<div class="card card-aclaracion">
+								<h3>Input type File</h3>
+								<p>Para que funcione necesitas adjuntar un pequeño archivo <code>inputFile.js</code> y añadirle al input la id
+									<code>inputTypeFileN</code> donde N es un número y la acción <code>onchange="uploadFiles()"</code>
+									
+								</p>
+								<pre><code>
+&lt;input 
+	type="file" 
+	class="form-control" 
+	id="inputTypeFile" 
+	size="50" 
+	onchange="uploadFiles()"
+&gt;
+					</code></pre>
+								
+							</div>
+						</div>
+					</div>
 					<div class="col-1 med-col-1 big-col-1">
 						<label class="form-label" for="customFile">Subir CV</label>
-						<input type="file" class="form-control" id="inputTypeFile" size="50" onchange="uploadFiles()">
+						<input type="file" class="form-control" id="inputTypeFile1" size="50" onchange="uploadFiles()">
 					</div>
 
 
 					<hr class="no-visible">
 
+					<div class="row">
+						<div class="col-1 med-col-1 big-col-1">
+							<div class="card card-aclaracion">
+								<h3>Input type Range</h3>
+								<p>Para que funcione necesitas adjuntar un pequeño archivo <code>inputRange.js</code> y si quieres el "chivato" de valores añadir un input <code>type="number"</code> 
+									
+								</p>
+								<pre><code>
+&lt;input 
+type="number" 
+class="form-control " 
+id="rangenumber" 
+min="0" 
+max="100" 
+value="0"
+oninput="range.value=value"
+&gt;
 
+&lt;input 
+type="range" 
+class="block" 
+value="00" 
+min="0" 
+max="100" 
+id="range"
+oninput="rangenumber.value=value"
+&gt;
+					</code></pre>
+								
+							</div>
+						</div>
+					</div>
 					<div class="col-1 med-col-1 big-col-1">
 						<div class="row">
 
@@ -668,7 +720,7 @@
 							</div>
 						</div>
 					</div>
-					<button type="submit" class="btn btn-primary">Enviar</button>
+					
 				</div>
 			</div>
 		</div>

@@ -1,7 +1,7 @@
 var tempDiv = document.createElement('div');
 tempDiv.className = "form-upload";
 tempDiv.setAttribute("id", "formUpload");
-document.getElementById("inputTypeFile").insertAdjacentElement('afterend', tempDiv);
+document.querySelector('input[id*="inputTypeFile"]').insertAdjacentElement('afterend', tempDiv);
 // Create element:
 const formUploadText = document.createElement("div");
 formUploadText.className = "form-upload-text";
@@ -9,9 +9,9 @@ formUploadText.setAttribute("id", "formUploadText");
 formUploadText.innerHTML = "Sube o arrastra archivos";
 
 // Append to another element:
-document.getElementById("formUpload").appendChild(formUploadText);
+document.querySelector('div[class*="form-upload"]').appendChild(formUploadText);
 function uploadFiles() {
-    var x = document.getElementById("inputTypeFile");
+    var x = document.querySelector('input[id*="inputTypeFile"]');
     var txt = "";
 
 
@@ -44,5 +44,5 @@ function uploadFiles() {
 
 
 
-    document.getElementById("formUploadText").innerHTML = txt;
+    document.querySelector('div[class*="form-upload-text"]').innerHTML = txt;
 }

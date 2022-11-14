@@ -180,9 +180,9 @@ blockquote {
     }
 }
 
-ul{
+ul.list{
     list-style: none;
-    padding-left: 1rem;
+    padding-left: 1.4rem;
 
     & li{
         position: relative;
@@ -193,12 +193,11 @@ ul{
             color: $primary;
             position: absolute;
             left: -1rem;
-    
-    
         }
-
         & ul{
+            padding-left: 1rem;
             margin: 1rem 0;
+            list-style: none;
 
             & li::before{
                 content: '▫';
@@ -208,12 +207,14 @@ ul{
 }
 
 ul.list-inline {
+    list-style: none;
     padding-left: 0;
     font-size: .9rem;
 
     & li {
+        position: relative;
         display: inline;
-        margin-left: 1.1rem;
+        margin-left: 1.4rem;
 
         &:first-child {
             margin-left: 0;
@@ -221,6 +222,9 @@ ul.list-inline {
 
         &:not(:first-child)::before {
             content: "|";
+            position: absolute;
+            left: -1rem;
+            color: $primary;
         }
     }
 }

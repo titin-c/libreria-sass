@@ -36,12 +36,14 @@ header {
     background: rgba($grey4, .9);
 
     & a{
-        color: $lighter-color;
+        font-weight: bold;
         text-decoration: none;
+        
+        
     }
 }
 section{
-	padding: 5rem 0 0;
+	margin: 4rem 0 0;
 }
 .color{
 	width: 50px;
@@ -60,14 +62,15 @@ section{
 	  }
 }
 .call-to{
-    background: url('../../source/img/bg.webp') center center;
+    background: url('../../source/img/bg.jpg') center center;
     background-size: cover;
     padding: $general-padding2;
     color: $lighter-color;
     border-radius: $general-radius2;
 
     @include darkMode {
-		background: url('../../source/img/bg.webp') center center;
+		background: url('../../source/img/bg.jpg') center center;
         background-size: cover;
 	  }
 }
+.example{margin: $general-margin4 0;}
