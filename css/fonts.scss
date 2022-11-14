@@ -180,32 +180,31 @@ blockquote {
     }
 }
 
-ul {
+ul{
     list-style: none;
     padding-left: 1rem;
 
-    & li {
+    & li{
         position: relative;
         margin-bottom: $general-margin2;
 
-        & ul {
+        &::before{
+            content: '▪';
+            color: $primary;
+            position: absolute;
+            left: -1rem;
+    
+    
+        }
+
+        & ul{
             margin: 1rem 0;
-        }
 
-        & li::before {
-            content: '▫';
+            & li::before{
+                content: '▫';
+            }
         }
     }
-
-    & li::before {
-        content: '▪';
-        color: $primary;
-        position: absolute;
-        left: -1rem;
-
-
-    }
-
 }
 
 ul.list-inline {

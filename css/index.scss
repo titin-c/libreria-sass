@@ -36,14 +36,13 @@ header {
     background: rgba($grey4, .9);
 
     & a{
-        color: $darker-color;
+        color: $lighter-color;
         text-decoration: none;
     }
 }
 section{
 	padding: 5rem 0 0;
 }
-.example{padding: 3rem 0;}
 .color{
 	width: 50px;
 	height: 50px;
@@ -66,4 +65,9 @@ section{
     padding: $general-padding2;
     color: $lighter-color;
     border-radius: $general-radius2;
+
+    @include darkMode {
+		background: url('../../source/img/bg.webp') center center;
+        background-size: cover;
+	  }
 }
