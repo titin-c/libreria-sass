@@ -14,21 +14,21 @@
 
 <body>
 	<header>
-		<nav class="nav">
-			<div class="container">
-				<ul class="list-inline">
-					<li class="list-inline-item"><a href="#">Home</a></li>
-					<li class="list-inline-item"><a href="#colors">Colors</a></li>
-					<li class="list-inline-item"><a href="#titles">Títulos</a></li>
-					<li class="list-inline-item"><a href="#fonts">Fonts</a></li>
-					<li class="list-inline-item"><a href="#images">Images</a></li>
-					<li class="list-inline-item"><a href="#columns">Columns</a></li>
-					<li class="list-inline-item"><a href="#buttons">Butons</a></li>
-					<li class="list-inline-item"><a href="#forms">Forms</a></li>
-				</ul>
+	
+				<nav class="navbar">
+					<a href="#navbar-menu" class="navbar-close"><img src="./source/icons/menu.svg" alt="menu" width="50" height="50"></a>
+					<ul class="navbar-menu" id="navbar-menu">
+						<li class="navbar-item"><a href="#">Home</a></li>
+						<li class="navbar-item"><a href="#colors">Colors</a></li>
+						<li class="navbar-item"><a href="#titles">Títulos</a></li>
+						<li class="navbar-item"><a href="#fonts">Fonts</a></li>
+						<li class="navbar-item"><a href="#images">Images</a></li>
+						<li class="navbar-item"><a href="#columns">Columns</a></li>
+						<li class="navbar-item"><a href="#buttons">Butons</a></li>
+						<li class="navbar-item"><a href="#forms">Forms</a></li>
+					</ul>
+				</nav>
 
-			</div>
-		</nav>
 	</header>
 	<div class="container">
 		<h1 class="display-2">Biblioteca propia hecha por Titín</h1>
@@ -43,6 +43,12 @@
 						<h5>Principales</h5>
 						<p>Color primary y secundar y color de texto y fondo para <code>Prefers-color-scheme</code> Dark
 							o Light.</p>
+						<pre><code>
+$lighter-color: #FAFAFA;
+$darker-color: #1D242C;
+$primary: #0176C3;
+$secondary: #C7EEFF;
+							</code></pre>
 						<div class="color bg-background"></div>
 						<div class="color bg-color"></div>
 						<div class="color bg-primary"></div>
@@ -53,6 +59,12 @@
 					<div class="card card-aclaracion">
 						<h5>Escala de grises</h5>
 						<p>Tan solo 4 grados de gris son suficientes para jugar con las distintas secciones.</p>
+						<pre><code>
+$grey1: lighten($darker-color, 75%);
+$grey2: lighten($darker-color, 50%);
+$grey3: lighten($darker-color, 30%);
+$grey4: lighten($darker-color, 10%);
+						</code></pre>
 						<div class="color bg-grey1"></div>
 						<div class="color bg-grey2"></div>
 						<div class="color bg-grey3"></div>
@@ -65,6 +77,10 @@
 					<div class="card card-aclaracion">
 						<h5>Colores de apoyo</h5>
 						<p>Colores de apoyo necesarios para feedback succsess o alert de las apps.</p>
+						<pre><code>
+$danger: #ff4d4f;
+$success: #41bf5a;
+						</code></pre>
 						<div class="color bg-success"></div>
 						<div class="color bg-danger"></div>
 						<div class="color bg-alert"></div>
@@ -120,7 +136,7 @@
 				<p><small>Esta línea de texto debe tratarse como letra pequeña.</small></p>
 				<p><strong>Esta línea se muestra como texto en negrita.</strong></p>
 				<p><em>Esta línea se muestra como texto en cursiva.</em></p>
-				</div>
+			</div>
 
 			<div class="example">
 				<blockquote class="blockquote">
@@ -159,51 +175,50 @@
 
 	<section id="images">
 		<div class="container">
-				<svg class="img-fluid" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
-					aria-label="Marcador de posición: imagen receptiva" preserveAspectRatio="xMidYMid slice"
-					focusable="false">
-					<title>Placeholder</title>
-					<rect width="100%" height="100%"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Responsive
-						image</text>
-				</svg>
+			<svg class="img-fluid" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+				aria-label="Marcador de posición: imagen receptiva" preserveAspectRatio="xMidYMid slice"
+				focusable="false">
+				<title>Placeholder</title>
+				<rect width="100%" height="100%"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Responsive
+					image</text>
+			</svg>
 
 			<hr class="no-visible">
 
-			
-				<svg class="img-thumbnail" width="150" height="150" xmlns="http://www.w3.org/2000/svg" role="img"
-					aria-label="Una imagen de marcador de posición cuadrada genérica con un borde blanco alrededor, lo que la hace parecerse a una fotografía tomada con una cámara instantánea antigua: 200x200"
+
+			<svg class="img-thumbnail" width="150" height="150" xmlns="http://www.w3.org/2000/svg" role="img"
+				aria-label="Una imagen de marcador de posición cuadrada genérica con un borde blanco alrededor, lo que la hace parecerse a una fotografía tomada con una cámara instantánea antigua: 200x200"
+				preserveAspectRatio="xMidYMid slice" focusable="false">
+				<title>A generic square placeholder image with a white border around it, making it resemble a
+					photograph taken with an old instant camera</title>
+				<rect width="100%" height="100%"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">150x150</text>
+			</svg>
+			<svg class="img-thumbnail round" width="150" height="150" xmlns="http://www.w3.org/2000/svg" role="img"
+				aria-label="Una imagen de marcador de posición cuadrada genérica con un borde blanco alrededor, lo que la hace parecerse a una fotografía tomada con una cámara instantánea antigua: 200x200"
+				preserveAspectRatio="xMidYMid slice" focusable="false">
+				<title>A generic square placeholder image with a white border around it, making it resemble a
+					photograph taken with an old instant camera</title>
+				<rect width="100%" height="100%"></rect><text x="50%" y="50%" dy=".3em">150x150</text>
+			</svg>
+
+			<hr class="no-visible">
+
+
+			<figure class="figure">
+				<svg class="bd-placeholder-img figure-img img-fluid rounded" width="400" height="300"
+					xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: 400x300"
 					preserveAspectRatio="xMidYMid slice" focusable="false">
-					<title>A generic square placeholder image with a white border around it, making it resemble a
-						photograph taken with an old instant camera</title>
+					<title>Placeholder</title>
 					<rect width="100%" height="100%"></rect><text x="50%" y="50%" fill="#dee2e6"
-						dy=".3em">150x150</text>
+						dy=".3em">400x300</text>
 				</svg>
-				<svg class="img-thumbnail round" width="150" height="150" xmlns="http://www.w3.org/2000/svg" role="img"
-					aria-label="Una imagen de marcador de posición cuadrada genérica con un borde blanco alrededor, lo que la hace parecerse a una fotografía tomada con una cámara instantánea antigua: 200x200"
-					preserveAspectRatio="xMidYMid slice" focusable="false">
-					<title>A generic square placeholder image with a white border around it, making it resemble a
-						photograph taken with an old instant camera</title>
-					<rect width="100%" height="100%"></rect><text x="50%" y="50%" dy=".3em">150x150</text>
-				</svg>
-			
-				<hr class="no-visible">
+				<figcaption class="figure-caption">
+					<font style="vertical-align: inherit;">
+						<font style="vertical-align: inherit;">Un título para la imagen de arriba.</font>
+					</font>
+				</figcaption>
+			</figure>
 
-
-				<figure class="figure">
-					<svg class="bd-placeholder-img figure-img img-fluid rounded" width="400" height="300"
-						xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: 400x300"
-						preserveAspectRatio="xMidYMid slice" focusable="false">
-						<title>Placeholder</title>
-						<rect width="100%" height="100%"></rect><text x="50%" y="50%" fill="#dee2e6"
-							dy=".3em">400x300</text>
-					</svg>
-					<figcaption class="figure-caption">
-						<font style="vertical-align: inherit;">
-							<font style="vertical-align: inherit;">Un título para la imagen de arriba.</font>
-						</font>
-					</figcaption>
-				</figure>
-			
 		</div>
 	</section>
 	<section id="columns">
@@ -465,7 +480,7 @@
 	</section>
 	<section id="forms">
 		<div class="container">
-			<div class="col-1 med-span-80 big-span-60">
+			<div class="col-1 med-span-80 big-span-70">
 				<div class="row">
 
 					<div class="col-1 med-col-2 big-col-2">
@@ -531,7 +546,7 @@
 							Botones tipo checkbox
 						</legend>
 						<div class="row">
-							<div class="col-1 med-col-3 big-col-3">
+							<div class="col-1 med-col-2 big-col-3">
 								<div>
 									<input type="checkbox" name="checkbox" class="form-check-input"
 										id="examplecheckbox1">
@@ -547,7 +562,7 @@
 									</label>
 								</div>
 							</div>
-							<div class="col-1 med-col-3 big-col-3">
+							<div class="col-1 med-col-2 big-col-3">
 								<div>
 									<input type="checkbox" name="checkbox" class="form-check-input rounded"
 										id="examplecheckbox3">
@@ -563,7 +578,7 @@
 									</label>
 								</div>
 							</div>
-							<div class="col-1 med-col-3 big-col-3">
+							<div class="col-1 med-col-2 big-col-3">
 								<div>
 									<input type="checkbox" name="checkbox" class="form-check-input success"
 										id="examplecheckbox5">
@@ -591,7 +606,7 @@
 							Botones tipo radio
 						</legend>
 						<div class="row">
-							<div class="col-1 med-col-3 big-col-3">
+							<div class="col-1 med-col-2 big-col-3">
 								<div>
 									<input type="radio" name="radios" class="form-check-input" id="exampleRadio1">
 									<label class="form-label" for="exampleRadio1">
@@ -605,7 +620,7 @@
 									</label>
 								</div>
 							</div>
-							<div class="col-1 med-col-3 big-col-3">
+							<div class="col-1 med-col-2 big-col-3">
 								<div>
 									<input type="radio" name="radios" class="form-check-input rounded"
 										id="exampleRadio3">
@@ -621,7 +636,7 @@
 									</label>
 								</div>
 							</div>
-							<div class="col-1 med-col-3 big-col-3">
+							<div class="col-1 med-col-2 big-col-3">
 								<div>
 									<input type="radio" name="radios" class="form-check-input success"
 										id="exampleRadio5">
@@ -647,9 +662,11 @@
 						<div class="col-1 med-col-1 big-col-1">
 							<div class="card card-aclaracion">
 								<h3>Input type File</h3>
-								<p>Para que funcione necesitas adjuntar un pequeño archivo <code>inputFile.js</code> y añadirle al input la id
-									<code>inputTypeFileN</code> donde N es un número y la acción <code>onchange="uploadFiles()"</code>
-									
+								<p>Para que funcione necesitas adjuntar un pequeño archivo <code>inputFile.js</code> y
+									añadirle al input la id
+									<code>inputTypeFileN</code> donde N es un número y la acción
+									<code>onchange="uploadFiles()"</code>
+
 								</p>
 								<pre><code>
 &lt;input 
@@ -660,7 +677,7 @@
 	onchange="uploadFiles()"
 &gt;
 					</code></pre>
-								
+
 							</div>
 						</div>
 					</div>
@@ -676,8 +693,9 @@
 						<div class="col-1 med-col-1 big-col-1">
 							<div class="card card-aclaracion">
 								<h3>Input type Range</h3>
-								<p>Para que funcione necesitas adjuntar un pequeño archivo <code>inputRange.js</code> y si quieres el "chivato" de valores añadir un input <code>type="number"</code> 
-									
+								<p>Para que funcione necesitas adjuntar un pequeño archivo <code>inputRange.js</code> y
+									si quieres el "chivato" de valores añadir un input <code>type="number"</code>
+
 								</p>
 								<pre><code>
 &lt;input 
@@ -700,7 +718,7 @@ id="range"
 oninput="rangenumber.value=value"
 &gt;
 					</code></pre>
-								
+
 							</div>
 						</div>
 					</div>
@@ -720,7 +738,7 @@ oninput="rangenumber.value=value"
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
 			</div>
 		</div>

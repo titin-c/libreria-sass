@@ -7,6 +7,10 @@
 // css de estructura de la página
 @import './containers';
 
+
+// css de las navbar
+@import './navbar';
+
 // css de los text, fonts, etc
 @import './fonts';
 
@@ -35,15 +39,10 @@ header {
     left: 0;
     background: rgba($grey4, .9);
 
-    & a{
-        font-weight: bold;
-        text-decoration: none;
-        
-        
-    }
+    
 }
 section{
-	margin: 4rem 0 0;
+	padding: 4rem 0 0;
 }
 .color{
 	width: 50px;
@@ -74,3 +73,9 @@ section{
 	  }
 }
 .example{margin: $general-margin4 0;}
+
+#buttons .btn{
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+}
