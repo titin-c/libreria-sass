@@ -153,8 +153,8 @@ input[type="radio"],
 input[type="checkbox"] {
 
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 31px;
+    height: 31px;
     margin-bottom: 0.25em;
     vertical-align: top;
     border: 1px solid $grey2;
@@ -184,8 +184,8 @@ input[type="checkbox"] {
 
         content: " ";
         display: inline-block;
-        width: 12px;
-        height: 12px;
+        width: 23px;
+        height: 23px;
         background-color: $lighter-color;
         position: absolute;
         top: 3px;
@@ -254,7 +254,7 @@ input[type="checkbox"] {
 input[type="checkbox"],
 input[type="radio"] {
     &.form-switch {
-        width: 32px;
+        width: 62px;
 
         @include darkMode {
             background-color: $darker-color;
@@ -272,8 +272,8 @@ input[type="radio"] {
         //el selector
         &::before {
             background-color: $grey2;
-            width: 14px;
-            height: 14px;
+            width: 24px;
+            height: 24px;
             top: 2px;
 
             @include darkMode {
@@ -286,18 +286,20 @@ input[type="radio"] {
             background-color: $secondary;
 
             &::before {
-                left: calc(100% - 16px);
+                left: calc(100% - 27px);
                 background-color: $primary;
             }
 
             &+.form-label {
                 color: $primary;
             }
+
         }
-    }
+            }
 
     &+.form-label {
         padding-left: $general-padding1;
+        padding-top: $general-padding1;
         text-transform: unset;
         display: inline-block;
         font-size: 1rem;
@@ -314,6 +316,7 @@ input[type="file" i].form-control {
 
     &+.form-upload {
         @include form-control-basic;
+        min-height: 3rem;
         display: flex;
         align-items: stretch;
         flex-wrap: nowrap;
@@ -347,9 +350,10 @@ input[type="file" i].form-control {
             background-color: $grey2;
             border-radius: $general-radius1;
             cursor: pointer;
+            width: 3rem;
             display: flex;
+            justify-content: center;
             align-items: center;
-            padding: 0 $general-padding2;
 
             @include darkMode {
                 background-color: $grey4;
